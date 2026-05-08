@@ -180,12 +180,30 @@ section{padding:110px 60px;}
 .hero-body,.hero-sub,.hero-subhead{margin-left:auto;margin-right:auto;}
 /* Steps cta centered */
 .steps-cta{text-align:center;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-hamburger span{display:block;width:24px;height:2px;background:var(--purple);transition:all 0.3s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.nav-mobile{display:none;position:fixed;top:61px;left:0;right:0;z-index:199;background:rgba(250,248,252,0.98);backdrop-filter:blur(16px);border-bottom:1px solid rgba(104,70,128,0.15);flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;padding:14px 32px;border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s;}
+.nav-mobile a.nav-cta{background:var(--purple);color:#ffffff;margin:16px 24px 8px;text-align:center;padding:14px 24px;border-bottom:none;}
+@media(max-width:900px){.nav-hamburger{display:flex;}.nav-links{display:none!important;}}
+.sec-inner{text-align:center;}
+.sec-inner .divider{margin-left:auto;margin-right:auto;}
+.sec-inner .sec-intro,.sec-inner .tier-intro{margin-left:auto;margin-right:auto;}
+.problem-inner,.del-inner,.pricing-inner,.problem-copy,.diff-points,.tier-card,.faq-item,.for-block,.svc-card,.how-step{text-align:left;}
+.hero,.page-hero{text-align:center;}
+.hero-inner{text-align:center;margin-left:auto;margin-right:auto;}
+.hero-inner h1,.hero-inner .hero-sub,.hero-inner .hero-body{text-align:center;}
+.hero-inner .hero-ctas,.hero .cta-row{justify-content:center;display:flex;}
 </style>
 </head>
 <body>
 
 <nav>
-  <a class="nav-logo" href="index.html"><img src="JforceLogo.webp" alt="J Force" style="height:44px;width:auto;"></a>
+  <a class="nav-logo" href="index.html"><img src="JforceLogo.webp" alt="J Force" style="height:64px;width:auto;"></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="jforce-ceonyx.html">CEOnyx™</a></li>
@@ -194,7 +212,9 @@ section{padding:110px 60px;}
     <li><a href="jforce-about.html" class="active">About</a></li>
     <li><a href="jforce-contact.html" class="nav-cta">Start With CEOnyx™</a></li>
   </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
+<nav id="nav-mobile" class="nav-mobile"><a href="index.html">Home</a><a href="jforce-ceonyx.html">CEOnyx™</a><a href="jforce-cofoundry.html">CoFoundry™</a><a href="jforce-how-it-works.html">How It Works</a><a href="jforce-about.html">About</a><a href="jforce-contact.html" class="nav-cta">Start With CEOnyx™</a></nav>
 
 <!-- HERO -->
 <section class="page-hero">
