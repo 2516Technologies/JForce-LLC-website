@@ -35,7 +35,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 nav{border-bottom:2px solid #2a1a1a;}
 
 /* ─── HERO ─── */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:150px 60px 110px;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--cream) 0%,var(--mint) 55%,var(--cream-warm) 100%);}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:170px 60px 110px;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--cream) 0%,var(--mint) 55%,var(--cream-warm) 100%);}
 .hero::before{content:'';position:absolute;top:-20%;right:-10%;width:75%;height:140%;background:radial-gradient(ellipse at 60% 40%,rgba(104,70,128,0.08) 0%,transparent 65%);pointer-events:none;}
 .hero::after{content:'';position:absolute;bottom:-10%;left:-5%;width:50%;height:80%;background:radial-gradient(ellipse at 30% 60%,rgba(212,174,170,0.06) 0%,transparent 60%);pointer-events:none;}
 .hero-eyebrow{font-size:9px;font-weight:800;letter-spacing:5px;text-transform:uppercase;color:var(--purple);margin-bottom:32px;opacity:.8;position:relative;z-index:1;}
@@ -240,6 +240,7 @@ section{padding:110px 60px;}
 .nav-mobile.open{display:flex;}
 .nav-mobile a{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;padding:18px 32px;border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s;}
 .nav-mobile a.nav-cta{background:var(--purple);color:#ffffff;margin:16px 24px 8px;text-align:center;padding:14px 24px;border-bottom:none;}
+.nav-mobile a:first-child{padding-top:32px;}
 @media(max-width:900px){.nav-hamburger{display:flex;}.nav-links{display:none!important;}}
 .sec-inner{text-align:center;}
 .sec-inner .divider{margin-left:auto;margin-right:auto;}
@@ -473,26 +474,27 @@ section{padding:110px 60px;}
     <span class="eyebrow">Client Voices</span>
     <h2 class="sec-title">What Founders<br><em>Are Saying</em></h2>
     <div class="divider"></div>
+    <div style="text-align:center;margin-bottom:48px;">
+      <img src="jforce-crescent.png" alt="J Force" style="height:120px;width:auto;opacity:0.85;">
+    </div>
     <div class="test-grid">
       <div class="test-card">
-        <div class="test-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div class="test-body"><p>Founder testimonial — pull from a $2M–$5M revenue founder who experienced the CoFoundry™ coordination model firsthand.</p></div>
-        <div class="test-attr"><span>Founder Name, Company</span><p>Title · Revenue Range</p></div>
+        <div class="test-body"><p>"Jamie was a key strategic collaborative partner on <strong>every project she worked on.</strong>"</p></div>
       </div>
       <div class="test-card">
-        <div class="test-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div class="test-body"><p>CEOnyx™ diagnostic story — a founder who discovered unexpected bottlenecks through the 4-week assessment process.</p></div>
-        <div class="test-attr"><span>Founder Name, Company</span><p>Title · Revenue Range</p></div>
+        <div class="test-body"><p>"Jamie consistently makes complex operations appear effortless—largely because of the thoughtful infrastructure and <strong>strategic systems</strong> she puts in place."</p></div>
       </div>
       <div class="test-card">
-        <div class="test-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div class="test-body"><p>Operational excellence story — can adapt from existing YPO client testimonials while founder-specific quotes are collected.</p></div>
-        <div class="test-attr"><span>Client Name, Organization</span><p>Role</p></div>
+        <div class="test-body"><p>"Jamie and her team are masters of process design. <strong>They've developed smart, repeatable systems.</strong>"</p></div>
       </div>
       <div class="test-card">
-        <div class="test-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div class="test-body"><p>Graduation story — a founder who scaled with CoFoundry™ then successfully handed off to full-time hires with the documented playbook.</p></div>
-        <div class="test-attr"><span>Founder Name, Company</span><p>Title · Revenue Range</p></div>
+        <div class="test-body"><p>"Hands down, Jamie is <strong>one of the most gifted communicators I know.</strong>"</p></div>
+      </div>
+      <div class="test-card">
+        <div class="test-body"><p>"<strong>J Force added value</strong> and built the muscle for cross-functional collaboration."</p></div>
+      </div>
+      <div class="test-card">
+        <div class="test-body"><p>"Jamie pulled off the project by keeping everyone <strong>organized</strong>, by not losing track of even minor side issues, and by building relationships."</p></div>
       </div>
     </div>
   </div>
