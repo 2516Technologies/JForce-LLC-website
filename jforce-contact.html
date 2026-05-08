@@ -137,13 +137,13 @@ nav{border-bottom:2px solid #2a1a1a;}
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:199;
+.nav-mobile{display:none;position:fixed;top:88px;left:0;right:0;z-index:199;
   background:rgba(250,248,252,0.98);backdrop-filter:blur(16px);
   border-bottom:1px solid rgba(104,70,128,0.15);
   flex-direction:column;padding:16px 0;}
 .nav-mobile.open{display:flex;}
-.nav-mobile a{font-size:11px;padding-top:20px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  color:var(--text);text-decoration:none;padding:14px 32px;
+.nav-mobile a{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  color:var(--text);text-decoration:none;padding:18px 32px;
   border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s,background 0.2s;}
 .nav-mobile a:hover{color:var(--purple);background:rgba(104,70,128,0.04);}
 .nav-mobile a.nav-cta{background:var(--purple);color:#ffffff;margin:16px 24px 8px;
@@ -178,9 +178,9 @@ nav{border-bottom:2px solid #2a1a1a;}
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:199;background:rgba(250,248,252,0.98);backdrop-filter:blur(16px);border-bottom:1px solid rgba(104,70,128,0.15);flex-direction:column;padding:16px 0;}
+.nav-mobile{display:none;position:fixed;top:88px;left:0;right:0;z-index:199;background:rgba(250,248,252,0.98);backdrop-filter:blur(16px);border-bottom:1px solid rgba(104,70,128,0.15);flex-direction:column;padding:16px 0;}
 .nav-mobile.open{display:flex;}
-.nav-mobile a{font-size:11px;padding-top:20px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;padding:14px 32px;border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s;}
+.nav-mobile a{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;padding:18px 32px;border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s;}
 .nav-mobile a.nav-cta{background:var(--purple);color:#ffffff;margin:16px 24px 8px;text-align:center;padding:14px 24px;border-bottom:none;}
 @media(max-width:900px){.nav-hamburger{display:flex;}.nav-links{display:none!important;}}
 .sec-inner{text-align:center;}
@@ -410,11 +410,17 @@ nav{border-bottom:2px solid #2a1a1a;}
   var btn = document.getElementById('hamburger');
   var menu = document.getElementById('nav-mobile');
   if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
     btn.classList.toggle('open');
     menu.classList.toggle('open');
   });
-  // close on link click
+  document.addEventListener('click', function(e){
+    if(!btn.contains(e.target) && !menu.contains(e.target)){
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    }
+  });
   menu.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){
       btn.classList.remove('open');
@@ -573,11 +579,17 @@ nav{border-bottom:2px solid #2a1a1a;}
   var btn = document.getElementById('hamburger');
   var menu = document.getElementById('nav-mobile');
   if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
     btn.classList.toggle('open');
     menu.classList.toggle('open');
   });
-  // close on link click
+  document.addEventListener('click', function(e){
+    if(!btn.contains(e.target) && !menu.contains(e.target)){
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    }
+  });
   menu.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){
       btn.classList.remove('open');
