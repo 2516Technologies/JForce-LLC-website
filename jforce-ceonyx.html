@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEOnyx™: The CEO Operating System — 4-Week Diagnostic | J Force</title>
+<meta name="description" content="CEOnyx is a 4-week diagnostic that maps where your business bleeds time & money. The CEO Operating System for $2M–$5M revenue founders.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#684680;--purple-dark:#4a2f5c;--purple-deeper:#321e40;
+  --purple-light:#9b7ab5;--purple-pale:#b89eca;--purple-tint:#f0eaf5;
+  --brown:#894E1A;--brown-light:#b87040;
+  --rose:#D4AEAA;--rose-light:#e8d5d2;
+  --cream:#F5EEEE;--cream-warm:#EDE4D8;--mint:#D1E1DC;--mint-light:#eaf2ef;
+  --white:#FAFAFA;--white-pure:#ffffff;
+  --ink:#2a1f35;--ink-mid:#3d3040;--ink-light:#6b5b78;
+  --text:#3d3040;--text-muted:#6b5b78;--text-dim:#9b8ea8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Montserrat',sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(250,248,252,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(104,70,128,0.15);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;letter-spacing:3px;color:var(--purple);text-decoration:none;}
+.nav-logo span{font-style:italic;font-weight:300;}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center;}
+.nav-links a{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--purple);}
+.nav-cta{padding:10px 22px;background:var(--purple);color:var(--white-pure)!important;}
+.nav-cta:hover{background:var(--purple-light)!important;}
+section{padding:110px 60px;}
+.sec-inner{max-width:1120px;margin:0 auto;}
+.eyebrow{display:block;font-size:9px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:var(--purple);margin-bottom:16px;}
+.sec-title{color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,52px);font-weight:300;line-height:1.1;color:var(--ink);}
+.sec-title em{font-style:italic;color:var(--purple);}
+.divider{width:48px;height:2px;background:linear-gradient(90deg,var(--purple),var(--rose));margin:22px 0;}
+.btn-primary{display:inline-block;padding:17px 44px;background:var(--purple);color:var(--white-pure);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .15s;}
+.btn-primary:hover{background:var(--purple-light);transform:translateY(-1px);}
+.btn-outline{display:inline-block;padding:16px 40px;border:1.5px solid rgba(196,160,216,.5);color:var(--purple-pale);font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:all .2s;}
+.btn-outline:hover{border-color:var(--purple-pale);background:rgba(196,160,216,.08);}
+
+/* PAGE HERO */
+.page-hero{padding:160px 60px 100px;background:linear-gradient(150deg,var(--cream) 0%,var(--mint) 50%,var(--cream-warm) 100%);position:relative;overflow:hidden;}
+.page-hero::before{content:'CEOnyx';position:absolute;right:-40px;bottom:-60px;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:600;color:rgba(104,70,128,0.06);pointer-events:none;user-select:none;letter-spacing:-8px;line-height:1;}
+.hero-inner{max-width:780px;position:relative;z-index:1;}
+.hero-inner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6.5vw,82px);font-weight:300;line-height:1.0;color:var(--ink);margin-bottom:10px;}
+.hero-inner h1 em{font-style:italic;color:var(--purple-pale);}
+.hero-inner h1 strong{font-weight:600;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,26px);font-style:italic;font-weight:300;color:var(--brown);margin-bottom:32px;}
+.hero-body{font-size:15px;line-height:1.85;color:var(--text);max-width:600px;margin-bottom:44px;}
+.hero-body strong{color:var(--ink);}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-price-note{display:block;margin-top:16px;font-size:12px;color:var(--text-dim);font-style:italic;}
+
+/* DISCOVER */
+.discover-section{background:var(--cream);}
+.discover-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:56px;}
+.discover-block{background:var(--white-pure);padding:44px 38px;border-top:2px solid transparent;transition:border-color .25s;}
+.discover-block:hover{border-top-color:var(--purple);}
+.discover-block h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:12px;line-height:1.2;}
+.discover-block p{font-size:13px;line-height:1.85;color:var(--text);}
+
+/* THE PROBLEM */
+.ceonyx-problem{background:var(--cream-warm);}
+.problem-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.problem-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:22px;}
+.problem-copy h2 em{font-style:italic;color:var(--purple-pale);}
+.problem-copy p{font-size:14px;line-height:1.9;color:var(--text);margin-bottom:15px;}
+.problem-copy p strong{color:var(--ink);}
+.pain-list{list-style:none;margin:24px 0 36px;}
+.pain-list li{font-size:13px;line-height:1.65;color:var(--ink);padding:11px 0 11px 24px;position:relative;border-bottom:1px solid rgba(104,70,128,.1);}
+.pain-list li::before{content:'→';position:absolute;left:0;color:var(--brown);}
+.solve-box{background:var(--white-pure);padding:44px;border-top:3px solid var(--purple);}
+.solve-box h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--ink);margin-bottom:14px;line-height:1.2;}
+.solve-box p{font-size:13px;line-height:1.85;color:var(--text-muted);margin-bottom:18px;}
+.solve-box p:last-child{margin-bottom:0;}
+.solve-box strong{color:var(--purple-pale);}
+
+/* 5 DIMENSIONS */
+.dimensions-section{background:var(--white-pure);border-top:1px solid rgba(104,70,128,0.15);}
+.dim-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:60px;}
+.dim-card{background:var(--cream);padding:40px 28px;position:relative;overflow:hidden;}
+.dim-num{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:rgba(104,70,128,.08);position:absolute;top:10px;right:14px;line-height:1;pointer-events:none;user-select:none;}
+.dim-card h3{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:14px;line-height:1.4;}
+.dim-card p{font-size:12px;line-height:1.8;color:var(--text);}
+
+/* HOW IT WORKS TIMELINE */
+.timeline-section{background:var(--cream);}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:60px;position:relative;}
+.timeline::before{content:'';position:absolute;top:36px;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--purple),var(--rose),var(--purple));opacity:.25;pointer-events:none;}
+.week-card{background:var(--white-pure);padding:44px 32px;position:relative;}
+.week-dot{width:10px;height:10px;border-radius:50%;background:var(--purple);margin-bottom:24px;border:2px solid var(--purple-pale);}
+.week-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:10px;display:block;}
+.week-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:14px;}
+.week-card p{font-size:12px;line-height:1.8;color:var(--text);}
+.week-card ul{list-style:none;margin-top:12px;}
+.week-card ul li{font-size:11px;color:rgba(184,168,200,.7);padding:5px 0 5px 16px;position:relative;}
+.week-card ul li::before{content:'—';position:absolute;left:0;color:var(--purple-pale);font-size:10px;}
+
+/* DELIVERABLES */
+.deliverables-section{background:var(--white);}
+.del-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.del-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:22px;}
+.del-copy h2 em{font-style:italic;color:var(--purple-pale);}
+.del-copy p{font-size:14px;line-height:1.9;color:var(--text);margin-bottom:20px;}
+.del-list{list-style:none;margin-top:8px;}
+.del-list li{font-size:13px;color:var(--ink);padding:12px 0 12px 24px;position:relative;border-bottom:1px solid rgba(104,70,128,.1);}
+.del-list li::before{content:'→';position:absolute;left:0;color:var(--purple-pale);}
+.del-options{display:flex;flex-direction:column;gap:2px;}
+.option-card{background:var(--white-pure);padding:40px 36px;border-left:3px solid transparent;}
+.option-card.diy{border-left-color:rgba(212,174,170,.4);}
+.option-card.team{border-left-color:var(--purple);}
+.option-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;display:block;}
+.option-card.diy .option-label{color:var(--brown);}
+.option-card.team .option-label{color:var(--purple-pale);}
+.option-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:10px;}
+.option-card p{font-size:13px;line-height:1.8;color:var(--text);}
+
+/* PRICING */
+.pricing-section{background:linear-gradient(135deg,var(--purple-tint) 0%,var(--cream) 100%);}
+.pricing-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.price-block{background:var(--white-pure);padding:60px 52px;text-align:center;border-top:3px solid var(--purple);}
+.price-amount{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;color:var(--ink);line-height:1;}
+.price-amount sup{font-size:.4em;vertical-align:super;color:var(--purple-pale);}
+.price-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--purple-pale);margin-top:10px;display:block;}
+.price-note{font-size:13px;font-style:italic;color:var(--text-muted);margin-top:10px;}
+.price-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,40px);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:20px;}
+.price-copy h2 em{font-style:italic;color:var(--purple-pale);}
+.price-copy p{font-size:14px;line-height:1.9;color:var(--text);margin-bottom:16px;}
+.price-ctas{display:flex;flex-direction:column;gap:12px;margin-top:32px;}
+
+/* FOR/NOT FOR */
+.for-section{background:var(--cream);}
+.for-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:56px;}
+.for-block{background:var(--white-pure);padding:52px 44px;}
+.for-block h3{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:28px;}
+.for-block.yes h3{color:var(--purple-pale);}
+.for-block.no h3{color:var(--brown);}
+.for-list{list-style:none;}
+.for-list li{font-size:13px;line-height:1.65;color:var(--text);padding:11px 0 11px 24px;position:relative;border-bottom:1px solid rgba(104,70,128,.08);}
+.for-block.yes .for-list li::before{content:'✓';position:absolute;left:0;color:var(--purple-pale);}
+.for-block.no .for-list li::before{content:'✕';position:absolute;left:0;color:var(--brown);font-size:10px;}
+
+/* CTA BAND */
+.cta-band{padding:100px 60px;text-align:center;background:var(--white);border-top:1px solid rgba(104,70,128,0.15);}
+.cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,52px);font-weight:300;color:#ffffff;margin-bottom:16px;}
+.cta-band h2 em{font-style:italic;color:var(--purple-pale);}
+.cta-band p{font-size:14px;line-height:1.85;color:rgba(255,255,255,0.8);max-width:500px;margin:0 auto 36px;}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+/* FOOTER */
+.site-footer{background:var(--white);border-top:1px solid rgba(104,70,128,.2);}
+.footer-main{padding:64px 60px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;color:var(--purple-pale);margin-bottom:10px;}
+.footer-tag{font-size:12px;font-style:italic;font-weight:300;color:var(--text-dim);line-height:1.7;margin-bottom:22px;}
+.footer-addr{font-size:11px;color:rgba(184,168,200,.4);line-height:1.9;}
+.footer-addr a{color:var(--purple-pale);text-decoration:none;}
+.footer-col-head{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:rgba(155,126,181,0.6);margin-bottom:18px;}
+.footer-nav-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-nav-list a{font-size:11px;font-weight:500;letter-spacing:1px;color:rgba(200,185,215,0.7);text-decoration:none;transition:color .2s;}
+.footer-nav-list a:hover{color:var(--purple-pale);}
+.footer-bottom{padding:18px 60px;border-top:1px solid rgba(104,70,128,.1);display:flex;align-items:center;justify-content:space-between;}
+.footer-bottom p{font-size:10px;letter-spacing:.5px;color:rgba(184,168,200,.3);}
+.footer-bottom a{color:rgba(184,168,200,.4);text-decoration:none;}
+
+@media(max-width:900px){
+  nav{padding:16px 24px;}.nav-links{display:none;}
+  .page-hero{padding:120px 24px 80px;}
+  section{padding-left:24px;padding-right:24px;}
+  .discover-grid,.dim-grid,.timeline,.del-inner,.pricing-inner,.for-grid{grid-template-columns:1fr;}
+  .problem-inner{grid-template-columns:1fr;gap:40px;}
+  .dim-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-main{grid-template-columns:1fr;gap:36px;padding:44px 24px;}
+  .footer-bottom{padding:16px 24px;flex-direction:column;gap:8px;text-align:center;}
+  .cta-band{padding:80px 24px;}
+}
+
+/* ── HAMBURGER ── */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-hamburger span{display:block;width:24px;height:2px;background:var(--purple);transition:all 0.3s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.nav-mobile{display:none;position:fixed;top:61px;left:0;right:0;z-index:199;
+  background:rgba(250,248,252,0.98);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(104,70,128,0.15);
+  flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  color:var(--text);text-decoration:none;padding:14px 32px;
+  border-bottom:1px solid rgba(104,70,128,0.08);transition:color 0.2s,background 0.2s;}
+.nav-mobile a:hover{color:var(--purple);background:rgba(104,70,128,0.04);}
+.nav-mobile a.nav-cta{background:var(--purple);color:#ffffff;margin:16px 24px 8px;
+  text-align:center;padding:14px 24px;border-bottom:none;}
+.nav-mobile a.nav-cta:hover{background:var(--purple-dark);}
+@media(max-width:900px){
+  .nav-hamburger{display:flex;}
+  .nav-links{display:none!important;}
+}
+
+/* ── CENTERED SECTION TEXT ── */
+.sec-inner{text-align:center;}
+.sec-inner .divider{margin-left:auto;margin-right:auto;}
+.sec-inner .sec-intro,.sec-inner .tier-intro,.sec-inner .team-intro{
+  margin-left:auto;margin-right:auto;text-align:center;}
+/* Keep two-column layouts left-aligned inside */
+.problem-inner,.del-inner,.pricing-inner,.jamie-inner,.origin-inner,
+.insight-inner,.what-inner,.contact-inner,.problem-copy,.del-copy,
+.price-copy,.jamie-story,.origin-copy,.insight-copy,.what-copy{text-align:left;}
+/* Card text stays left */
+.step,.offer-card,.diff-card,.tier-card,.dim-card,.week-card,.phase,
+.path-card,.faq-item,.for-block,.approach-card,.team-card,.value-card,
+.discover-block,.svc-card,.sidebar-block,.form-wrap{text-align:left;}
+/* Hero text centered */
+.hero,.page-hero{text-align:center;}
+.hero .cta-row,.hero-ctas{justify-content:center;}
+.hero-body,.hero-sub,.hero-subhead{margin-left:auto;margin-right:auto;}
+/* Steps cta centered */
+.steps-cta{text-align:center;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="jforce-home.html">J <span>Force</span></a>
+  <ul class="nav-links">
+    <li><a href="jforce-home.html">Home</a></li>
+    <li><a href="jforce-ceonyx.html" class="active">CEOnyx™</a></li>
+    <li><a href="jforce-cofoundry.html">CoFoundry™</a></li>
+    <li><a href="jforce-how-it-works.html">How It Works</a></li>
+    <li><a href="jforce-about.html">About</a></li>
+    <li><a href="jforce-contact.html" class="nav-cta">Start With CEOnyx™</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-inner">
+    <span class="eyebrow">CEOnyx™ · The CEO Operating System</span>
+    <h1><em>Find Out What's<br>Actually Broken.</em></h1>
+    <p class="hero-sub">A 4-week diagnostic that reveals exactly where your business is bleeding time, money, and energy—and gives you a roadmap to fix it.</p>
+    <p class="hero-body">Most $2M–$5M founders know something is wrong. They're just not sure exactly <strong>where.</strong> CEOnyx™ is the diagnosis before the treatment.</p>
+    <div class="hero-ctas">
+      <a href="jforce-contact.html" class="btn-primary">Start Your CEOnyx™ Diagnostic</a>
+      <a href="jforce-how-it-works.html" class="btn-outline">See CEOnyx™ + CoFoundry™</a>
+    </div>
+    <span class="hero-price-note">Investment: $9,997 · Standalone or included in CoFoundry™ engagements</span>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL DISCOVER -->
+<section class="discover-section">
+  <div class="sec-inner">
+    <span class="eyebrow">What You'll Discover</span>
+    <h2 class="sec-title">A Diagnostic That<br><em>Tells You the Truth</em></h2>
+    <div class="divider"></div>
+    <div class="discover-grid">
+      <div class="discover-block">
+        <h3>Where Your Time Actually Goes</h3>
+        <p>Not where you think it goes—where it actually goes. We map your real time allocation vs. where it should go for a founder at your stage. You'll probably be surprised.</p>
+      </div>
+      <div class="discover-block">
+        <h3>Hidden Money Leaks</h3>
+        <p>Most $2M–$5M founders are leaking $50K–$150K annually in invisible inefficiencies. We find them: redundant systems, mis-scoped roles, untracked contractor costs, and decision-delay costs.</p>
+      </div>
+      <div class="discover-block">
+        <h3>What Only You Can Do</h3>
+        <p>Which decisions actually require you? Which ones just come to you by default? We map what's genuinely founder-only vs. what you're doing out of habit, fear, or lack of infrastructure.</p>
+      </div>
+      <div class="discover-block">
+        <h3>Exact Bottlenecks Preventing Scale</h3>
+        <p>The specific operational gaps preventing you from scaling—ranked by impact and ease of fix. You leave with a prioritized roadmap, not a vague list of improvements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="ceonyx-problem">
+  <div class="sec-inner">
+    <div class="problem-inner">
+      <div class="problem-copy">
+        <span class="eyebrow">The Trap</span>
+        <h2>You're Working IN<br>the Business,<br><em>Not ON It.</em></h2>
+        <div class="divider"></div>
+        <p>You built something. Maybe you've hit $2M, $3M, even $5M in revenue. But here's what no one tells you: that success is now drowning you.</p>
+        <ul class="pain-list">
+          <li>You're still answering the "quick question" Slack messages</li>
+          <li>You're in every decision, every approval, every firefight</li>
+          <li>Your team waits for you—you've accidentally become the bottleneck</li>
+          <li>You dream about time off but know everything would collapse without you</li>
+          <li>You know you need systems—but you don't have time to figure that out</li>
+        </ul>
+        <p>You know you need to delegate. You know you need to work <em>on</em> the business. But you don't know where to start.</p>
+      </div>
+      <div class="solve-box">
+        <h3>That's the Trap.<br>That's What CEOnyx™ Solves.</h3>
+        <p>CEOnyx™ is a comprehensive 4-week assessment that evaluates your business across five critical dimensions—and hands you a <strong>clear, prioritized roadmap</strong> for what to fix first.</p>
+        <p>Some founders implement the roadmap themselves. Most realize they need help executing it. That's where CoFoundry™ comes in.</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--brown);margin-top:8px;">"CEOnyx is the diagnosis. CoFoundry is the treatment."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 DIMENSIONS -->
+<section class="dimensions-section">
+  <div class="sec-inner">
+    <span class="eyebrow">The Framework</span>
+    <h2 class="sec-title">Five Critical<br><em>Dimensions</em></h2>
+    <div class="divider"></div>
+    <p style="font-size:14px;line-height:1.9;color:var(--text-muted);max-width:600px;">CEOnyx™ evaluates your business across five dimensions that most founders have never formally assessed—let alone optimized.</p>
+    <div class="dim-grid">
+      <div class="dim-card">
+        <div class="dim-num">1</div>
+        <h3>Time Architecture</h3>
+        <p>Where does your time actually go? Where should it go? What can only you do—and what shouldn't you be doing at all?</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-num">2</div>
+        <h3>Delegation Infrastructure</h3>
+        <p>Do you have the right people, roles, and handoff systems? Or are you "delegating" by dumping tasks with no context?</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-num">3</div>
+        <h3>Operational Systems</h3>
+        <p>What's documented? What's repeatable? What's in your head that needs to be on paper so someone else can own it?</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-num">4</div>
+        <h3>Decision-Making Framework</h3>
+        <p>Which decisions need you? How do you make sure the right things get decided fast—without becoming the approval bottleneck?</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-num">5</div>
+        <h3>Team &amp; Talent Gaps</h3>
+        <p>What roles do you need next? What functions are missing? What's the gap between what you need now and what you'll need at $10M?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4-WEEK TIMELINE -->
+<section class="timeline-section">
+  <div class="sec-inner">
+    <span class="eyebrow">The Process</span>
+    <h2 class="sec-title">Four Weeks.<br><em>Complete Clarity.</em></h2>
+    <div class="divider"></div>
+    <div class="timeline">
+      <div class="week-card">
+        <div class="week-dot"></div>
+        <span class="week-label">Week 1</span>
+        <h3>Discovery</h3>
+        <p>We get the full picture.</p>
+        <ul>
+          <li>Intake interview with Jamie</li>
+          <li>Time audit: where does your time actually go?</li>
+          <li>Calendar, key documents, org chart access</li>
+          <li>Optional: stakeholder interviews</li>
+        </ul>
+      </div>
+      <div class="week-card">
+        <div class="week-dot"></div>
+        <span class="week-label">Week 2</span>
+        <h3>Assessment</h3>
+        <p>Deep-dive across all five dimensions.</p>
+        <ul>
+          <li>Analysis of critical gaps and bottlenecks</li>
+          <li>Money mapping: identify hidden leaks</li>
+          <li>Benchmarking against your revenue stage</li>
+          <li>Decision analysis: what only you can do</li>
+        </ul>
+      </div>
+      <div class="week-card">
+        <div class="week-dot"></div>
+        <span class="week-label">Week 3</span>
+        <h3>Diagnosis &amp; Roadmap</h3>
+        <p>We translate findings into action.</p>
+        <ul>
+          <li>Comprehensive findings report</li>
+          <li>Prioritized recommendations (fix first, second, third)</li>
+          <li>Role gap analysis: what functions you need</li>
+          <li>Systems inventory: who should own what</li>
+        </ul>
+      </div>
+      <div class="week-card">
+        <div class="week-dot"></div>
+        <span class="week-label">Week 4</span>
+        <h3>Strategy Session</h3>
+        <p>You walk away with a clear path.</p>
+        <ul>
+          <li>90-minute session with Jamie</li>
+          <li>Walk through the full roadmap</li>
+          <li>DIY vs. CoFoundry™ decision tree</li>
+          <li>90-day action plan with milestones</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERABLES & NEXT STEPS -->
+<section class="deliverables-section">
+  <div class="sec-inner">
+    <div class="del-inner">
+      <div class="del-copy">
+        <span class="eyebrow">What You Get</span>
+        <h2>Everything You Need<br>to <em>Move Forward</em></h2>
+        <div class="divider"></div>
+        <p>CEOnyx™ delivers a complete picture of your operational health—plus a prioritized, actionable roadmap you can execute immediately.</p>
+        <ul class="del-list">
+          <li>Full CEOnyx™ Assessment Report (20–30 pages)</li>
+          <li>Time Architecture Analysis</li>
+          <li>Delegation Readiness Scorecard</li>
+          <li>Systems Maturity Map</li>
+          <li>Role Gap Analysis &amp; Hiring Roadmap</li>
+          <li>90-Day Action Plan</li>
+          <li>Recorded strategy session</li>
+        </ul>
+      </div>
+      <div class="del-options">
+        <div class="option-card diy">
+          <span class="option-label">Option 1 · Self-Implement</span>
+          <h3>Take the Roadmap and Run</h3>
+          <p>Some founders have internal teams to execute. Take the CEOnyx™ deliverables and implement on your own timeline. You'll have everything you need.</p>
+        </div>
+        <div class="option-card team">
+          <span class="option-label">Option 2 · Bring in CoFoundry™</span>
+          <h3>We Build It With You</h3>
+          <p>Most founders realize they need help executing the roadmap. CoFoundry™ becomes the coordinated team that implements the systems, fills the gaps, and builds you toward independence—using the CEOnyx™ roadmap as the blueprint.</p>
+          <a href="jforce-cofoundry.html" style="display:inline-block;margin-top:16px;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--purple-pale);text-decoration:none;border-bottom:1px solid rgba(196,160,216,.3);padding-bottom:2px;">Explore CoFoundry™ →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="sec-inner">
+    <div class="pricing-inner">
+      <div class="price-block">
+        <p class="price-amount"><sup>$</sup>9,997</p>
+        <span class="price-label">Investment</span>
+        <p class="price-note">Standalone · or included in any CoFoundry™ engagement</p>
+      </div>
+      <div class="price-copy">
+        <span class="eyebrow">Investment</span>
+        <h2>Clarity on Where<br>You're <em>Actually Bleeding</em></h2>
+        <div class="divider"></div>
+        <p>Most founders discover $50K–$150K in annual inefficiencies during their CEOnyx™ assessment. The diagnostic pays for itself—before you've implemented a single recommendation.</p>
+        <p>CEOnyx™ stands alone as a complete engagement. If you choose to move into CoFoundry™, the diagnostic fee is included in your first month.</p>
+        <div class="price-ctas">
+          <a href="jforce-contact.html" class="btn-primary">Start Your CEOnyx™ Diagnostic</a>
+          <a href="jforce-how-it-works.html" class="btn-outline">See the Full System</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR / NOT FOR -->
+<section class="for-section">
+  <div class="sec-inner">
+    <span class="eyebrow">Is CEOnyx™ Right for You?</span>
+    <h2 class="sec-title">This Is for You If…</h2>
+    <div class="divider"></div>
+    <div class="for-grid">
+      <div class="for-block yes">
+        <h3>This is for you if:</h3>
+        <ul class="for-list">
+          <li>You're doing $2M–$5M in revenue and feeling like you're the bottleneck</li>
+          <li>You've tried to delegate but it keeps coming back to you</li>
+          <li>You know you need "systems" but have no idea where to start</li>
+          <li>You're thinking about hiring but don't know what role to hire first</li>
+          <li>You're exhausted by the operational chaos of running a growing business</li>
+        </ul>
+      </div>
+      <div class="for-block no">
+        <h3>This is NOT for you if:</h3>
+        <ul class="for-list">
+          <li>You're pre-revenue (you don't have a business to systematize yet)</li>
+          <li>You're over $20M with a full executive team (you need different support)</li>
+          <li>You want someone to tell you what you want to hear (we tell you what's true)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <h2>Start With<br><em>CEOnyx™</em></h2>
+  <p>Schedule a call to discuss whether the CEOnyx™ diagnostic is the right first step for where you are right now.</p>
+  <div class="cta-row">
+    <a href="jforce-contact.html" class="btn-primary">Schedule Your CEOnyx™ Assessment</a>
+    <a href="jforce-cofoundry.html" class="btn-outline">Or Skip to CoFoundry™</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <p class="footer-logo">J Force LLC</p>
+      <p class="footer-tag">"We build the team you need, then hand you the keys."</p>
+      <div class="footer-addr">111 Town Square Pl Ste 1238 #703629<br>Jersey City, New Jersey 07310<br><br><a href="mailto:jamie@jforcellc.com">JAMIE@JFORCELLC.COM</a></div>
+    </div>
+    <div>
+      <p class="footer-col-head">Navigate</p>
+      <ul class="footer-nav-list">
+        <li><a href="jforce-home.html">Home</a></li>
+        <li><a href="jforce-ceonyx.html">CEOnyx™</a></li>
+        <li><a href="jforce-cofoundry.html">CoFoundry™</a></li>
+        <li><a href="jforce-how-it-works.html">How It Works</a></li>
+    <li><a href="jforce-about.html">About</a></li>
+        <li><a href="jforce-contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-head">Resources</p>
+      <ul class="footer-nav-list">
+        <li><a href="jforce-contact.html">Free OS Checklist</a></li>
+        <li><a href="jforce-cofoundry.html#pricing">Pricing</a></li>
+        <li><a href="jforce-how-it-works.html#faq">FAQ</a></li>
+        <li><a href="jforce-contact.html">Schedule a Call</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>©2025 J Force LLC | All Rights Reserved | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    <p>CEOnyx™ and CoFoundry™ are trademarks of J Force LLC</p>
+  </div>
+</footer>
+
+<!-- ============================================
+     SCROLL REVEAL — paste just before 
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('nav-mobile');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  // close on link click
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
+})();
+</script>
+
+</body>
+     on every J Force page
+     ============================================ -->
+<style>
+  /* Initial hidden state for reveal elements */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered children — each child delays slightly */
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal-stagger.revealed > *:nth-child(1) { transition-delay: 0s;    opacity: 1; transform: translateY(0); }
+  .reveal-stagger.revealed > *:nth-child(2) { transition-delay: 0.1s;  opacity: 1; transform: translateY(0); }
+  .reveal-stagger.revealed > *:nth-child(3) { transition-delay: 0.2s;  opacity: 1; transform: translateY(0); }
+  .reveal-stagger.revealed > *:nth-child(4) { transition-delay: 0.3s;  opacity: 1; transform: translateY(0); }
+  .reveal-stagger.revealed > *:nth-child(5) { transition-delay: 0.4s;  opacity: 1; transform: translateY(0); }
+
+  /* Fade only (no translate) — for full-width sections */
+  .reveal-fade {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .reveal-fade.revealed {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  (function() {
+    // Elements to watch
+    const selectors = [
+      // Section headers
+      '.sec-inner > .eyebrow',
+      '.sec-inner > .sec-title',
+      '.sec-inner > .divider',
+      '.sec-inner > .sec-intro',
+      '.sec-inner > .tier-intro',
+      // Hero content
+      '.hero-eyebrow',
+      '.hero h1',
+      '.hero-inner h1',
+      '.hero-subhead',
+      '.hero-sub',
+      '.hero-body',
+      '.hero-ctas',
+      '.hero-inner .btn-primary',
+      '.hero-inner .btn-outline',
+      '.central-tag',
+      // Cards and grids — stagger the grid, reveal each card
+      '.steps > .step',
+      '.offers-grid > .offer-card',
+      '.diff-grid > .diff-card',
+      '.test-grid > .test-card',
+      '.tiers-grid > .tier-card',
+      '.dim-grid > .dim-card',
+      '.timeline > .week-card',
+      '.timeline > .tl-step',
+      '.phases > .phase',
+      '.paths-grid > .path-card',
+      '.faq-grid > .faq-item',
+      '.for-grid > .for-block',
+      '.approach-grid > .approach-card',
+      '.team-grid > .team-card',
+      '.values-grid > .value-card',
+      '.discover-grid > .discover-block',
+      '.steps-grid > .step-card',
+      '.related-grid > .related-card',
+      // Two-column layouts
+      '.problem-inner',
+      '.del-inner',
+      '.pricing-inner',
+      '.jamie-inner',
+      '.origin-inner',
+      '.insight-inner',
+      '.what-inner',
+      '.contact-inner',
+      // System diagram
+      '.system-diagram',
+      '.sys-outcome',
+      // Trust bar
+      '.trust-bar',
+      // Lead magnet
+      '.lm-inner',
+      // Sidebar blocks
+      '.sidebar-block',
+    ];
+
+    // Add reveal class to all matching elements
+    selectors.forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(el) {
+        // Don't double-add
+        if (!el.classList.contains('reveal') && 
+            !el.classList.contains('reveal-fade') &&
+            !el.classList.contains('reveal-stagger')) {
+          el.classList.add('reveal');
+        }
+      });
+    });
+
+    // Nav and trust bar items — stagger
+    var trustBar = document.querySelector('.trust-bar');
+    if (trustBar) {
+      trustBar.classList.remove('reveal');
+      trustBar.classList.add('reveal-stagger');
+    }
+
+    // Hero section itself — fade (no translate, it's full viewport)
+    var hero = document.querySelector('.hero, .page-hero');
+    if (hero) {
+      hero.classList.add('reveal-fade');
+    }
+
+    // IntersectionObserver
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target); // only animate once
+        }
+      });
+    }, {
+      threshold: 0.12,       // trigger when 12% visible
+      rootMargin: '0px 0px -40px 0px'  // slight offset so it fires just before fully in view
+    });
+
+    // Observe everything with a reveal class
+    document.querySelectorAll('.reveal, .reveal-fade, .reveal-stagger').forEach(function(el) {
+      observer.observe(el);
+    });
+
+  })();
+</script>
+
+
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('nav-mobile');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  // close on link click
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
