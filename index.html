@@ -35,7 +35,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 nav{border-bottom:2px solid #2a1a1a;}
 
 /* ─── HERO ─── */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:170px 60px 110px;position:relative;overflow:hidden;background:#ffffff;}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:170px 60px 110px;position:relative;overflow:hidden;background:#ffffff;}
 .hero::before{content:'';position:absolute;top:-20%;right:-10%;width:75%;height:140%;background:radial-gradient(ellipse at 60% 40%,rgba(104,70,128,0.08) 0%,transparent 65%);pointer-events:none;}
 .hero::after{content:'';position:absolute;bottom:-10%;left:-5%;width:50%;height:80%;background:radial-gradient(ellipse at 30% 60%,rgba(212,174,170,0.06) 0%,transparent 60%);pointer-events:none;}
 .hero-eyebrow{font-size:9px;font-weight:800;letter-spacing:5px;text-transform:uppercase;color:var(--purple);margin-bottom:32px;opacity:.8;position:relative;z-index:1;}
@@ -252,7 +252,7 @@ section{padding:110px 60px;}
 .sec-inner .sec-intro,.sec-inner .tier-intro{margin-left:auto;margin-right:auto;}
 .problem-inner,.del-inner,.pricing-inner,.problem-copy,.diff-points,.tier-card,.faq-item,.for-block,.svc-card,.how-step{text-align:left;}
 .hero,.page-hero{text-align:center;}
-.hero-inner{text-align:center;margin-left:auto;margin-right:auto;}
+.hero-inner{text-align:center;margin-left:auto;margin-right:auto;width:100%;max-width:100%;display:flex;flex-direction:column;align-items:center;}
 .hero-inner h1,.hero-inner .hero-sub,.hero-inner .hero-body{text-align:center;}
 .hero-inner .hero-ctas,.hero .cta-row{justify-content:center;display:flex;}
 :root{--brand-purple:#7952A3;}
