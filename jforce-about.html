@@ -84,7 +84,7 @@ section{padding:110px 60px;}
 .approach-section{background:#ffffff;}
 .approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:60px;}
 .approach-card{background:#ffffff;padding:44px 32px;position:relative;overflow:hidden;}
-.approach-num{font-family:'Cormorant Garamond',serif;font-size:90px;font-weight:300;color:rgba(104,70,128,0.06);position:absolute;bottom:-6px;right:10px;line-height:1;pointer-events:none;user-select:none;}
+
 .approach-card h3{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--purple);margin-bottom:14px;line-height:1.4;}
 .approach-card p{font-size:13px;line-height:1.85;color:var(--text);}
 
@@ -280,6 +280,18 @@ section{padding:110px 60px;}
 .cta-band .cta-row{justify-content:center;display:flex;flex-wrap:wrap;gap:14px;}
 .final-cta .btn-primary{display:block;margin:0 auto 14px;}
 .hero-body{text-align:center!important;margin-left:auto!important;margin-right:auto!important;}
+@media(max-width:900px){
+  .sec-inner{text-align:center!important;}
+  .sec-inner h2,.sec-title{text-align:center!important;}
+  .eyebrow{text-align:center!important;}
+  .divider{margin-left:auto!important;margin-right:auto!important;}
+  .cta-row,.cta-stack{display:flex!important;flex-direction:column!important;align-items:center!important;}
+  .jamie-story{text-align:center!important;}
+  .cred-bar{text-align:left!important;}
+}
+.cta-band .btn-primary{background:#ffffff!important;color:#7952A3!important;}
+.cta-band .btn-primary:hover{background:rgba(255,255,255,0.9)!important;color:#7952A3!important;}
+.cta-band .cta-row{display:flex;flex-direction:column;align-items:center;gap:14px;}
 </style>
 </head>
 <body>
@@ -367,22 +379,18 @@ section{padding:110px 60px;}
     <div class="divider"></div>
     <div class="approach-grid">
       <div class="approach-card">
-        <div class="approach-num">1</div>
         <h3>Diagnosis Before Prescription</h3>
         <p>We don't assume. <strong>CEO</strong>nyx™ is the diagnosis. CoFoundry™ is the prescription. We never recommend more support than you actually need.</p>
       </div>
       <div class="approach-card">
-        <div class="approach-num">2</div>
         <h3>Coordination, Not Chaos</h3>
         <p>Five contractors who don't talk create work for you. One integrated team removes you as the integration layer entirely.</p>
       </div>
       <div class="approach-card">
-        <div class="approach-num">3</div>
         <h3>Build Toward Handoff</h3>
         <p>Every system is documented for handoff. We're not trying to make you dependent. We're trying to make you independent—with infrastructure instead of chaos.</p>
       </div>
       <div class="approach-card">
-        <div class="approach-num">4</div>
         <h3>Honest, Not Comfortable</h3>
         <p>We tell you what's true—not what you want to hear. <strong>CEO</strong>nyx™ findings are candid. CoFoundry™ engagements include honest assessments of what's working and what isn't.</p>
       </div>
@@ -434,28 +442,28 @@ section{padding:110px 60px;}
     <div class="divider"></div>
     <div class="values-grid">
       <div class="value-card">
-        <div class="value-glyph">Co</div>
+        <div class="value-glyph" style="font-size:32px;color:var(--purple);opacity:0.4;font-family:'Cormorant Garamond',serif;">01</div>
         <div>
           <h3>Collaboration</h3>
           <p>We're on your team—not in your way. We don't compete with your existing staff, and we don't silo ourselves from your business. We integrate, we coordinate, and we make the whole thing work better together.</p>
         </div>
       </div>
       <div class="value-card">
-        <div class="value-glyph">Ex</div>
+        <div class="value-glyph" style="font-size:32px;color:var(--purple);opacity:0.4;font-family:'Cormorant Garamond',serif;">02</div>
         <div>
           <h3>Excellence</h3>
           <p>We don't build systems halfway. We document processes completely. We design handoffs that actually work. The standard we hold ourselves to is: would this be usable without us in the room? If no, we haven't finished yet.</p>
         </div>
       </div>
       <div class="value-card">
-        <div class="value-glyph">Cl</div>
+        <div class="value-glyph" style="font-size:32px;color:var(--purple);opacity:0.4;font-family:'Cormorant Garamond',serif;">03</div>
         <div>
           <h3>Clarity &amp; Support</h3>
           <p>We tell you what's true. <strong>CEO</strong>nyx™ findings are honest—even when they're uncomfortable. CoFoundry™ engagements include candid check-ins on what's working. You need people who will tell you the hard thing.</p>
         </div>
       </div>
       <div class="value-card">
-        <div class="value-glyph">Cn</div>
+        <div class="value-glyph" style="font-size:32px;color:var(--purple);opacity:0.4;font-family:'Cormorant Garamond',serif;">04</div>
         <div>
           <h3>Connection</h3>
           <p>We are not a faceless agency. You know who's working on your business. We're invested in your success beyond the engagement. Some of our best relationships are with founders who graduated years ago.</p>
